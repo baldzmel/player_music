@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { TrackModel } from '@core/models/tracks.models';
 
 @Component({
   selector: 'app-media-player',
@@ -6,5 +7,11 @@ import { Component } from '@angular/core';
   styleUrls: ['./media-player.component.css']
 })
 export class MediaPlayerComponent {
-
+  mockCover: TrackModel = {
+    cover: '',
+    album: 'Gioli & Assia',
+    name: 'BEBE (Official)',
+    url: 'http://localhost/track.mp3',
+    _id: 1
+  }
 }
